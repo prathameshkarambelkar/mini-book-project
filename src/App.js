@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+function BookList() {
+  return <section>
+  <Book />
+  </section>;
+}
+
+const Book = () => {
+  return <article>
+    <Image />
+    <Title />
+    <Author />
+  </article>;
+}
+
+const Image = () => (<img src="https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg" alt="Book Image" />)
+  
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BookList/>
   );
 }
 
+
+const Title = () => <h1>Atomic Habits: The life-changing million copy bestseller</h1>
+const Author = () => <h4>James Clear</h4>
 export default App;
