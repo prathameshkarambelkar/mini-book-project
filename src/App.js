@@ -1,20 +1,29 @@
 
+const author = 'James Clear'
+const title = 'Atomic Habits: The life-changing million copy bestseller'
+const img = 'https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg'
 function BookList() {
-  return <section>
+  return <section className="booklist">
+  <Book />
+  <Book />
+  <Book />
+  <Book />
+  <Book />
+  <Book />
   <Book />
   </section>;
 }
 
 const Book = () => {
-  return <article>
-    <Image />
-    <Title />
-    <Author />
-  </article>;
+  return <article className="book">
+  <img src={img} alt="Book Image" />
+  <h1>{title}</h1>
+  <h4>{author}</h4>
+
+ </article>;
 }
 
-const Image = () => (<img src="https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg" alt="Book Image" />)
-  
+
 
 function App() {
   return (
@@ -22,7 +31,4 @@ function App() {
   );
 }
 
-
-const Title = () => <h1>Atomic Habits: The life-changing million copy bestseller</h1>
-const Author = () => <h4>James Clear</h4>
 export default App;
