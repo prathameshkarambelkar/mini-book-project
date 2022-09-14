@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mini-book-project/static/css/main.841e6a2a.css",
+    "main.js": "/mini-book-project/static/js/main.f43428c9.js",
+    "index.html": "/mini-book-project/index.html",
+    "main.841e6a2a.css.map": "/mini-book-project/static/css/main.841e6a2a.css.map",
+    "main.f43428c9.js.map": "/mini-book-project/static/js/main.f43428c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.841e6a2a.css",
+    "static/js/main.f43428c9.js"
+  ]
+}
